@@ -8,13 +8,10 @@ import timber.log.Timber
 
 class DessertTimer(lifecycle: Lifecycle) : LifecycleObserver {
 
-    // The number of seconds counted since the timer started
+   
     var secondsCount = 0
 
-    /**
-     * [Handler] is a class meant to process a queue of messages (known as [android.os.Message]s)
-     * or actions (known as [Runnable]s)
-     */
+
     private var handler = Handler()
     private lateinit var runnable: Runnable
 
